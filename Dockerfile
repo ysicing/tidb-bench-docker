@@ -9,7 +9,7 @@ RUN yum makecache;yum install -y wget; \
     wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo; \
     yum makecache;yum install -y sysbench ipef3 curl git net-tools openssh-server openssh-clients; \
     yum clean all; \
-    git clone --depth 1 ${REPO_URL} /root/
+    git clone --depth 1 ${REPO_URL} /root/tidbbench
 
 EXPOSE  22
 
